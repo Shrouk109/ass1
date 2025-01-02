@@ -1,0 +1,22 @@
+$main-color: #1abc9c;
+$sec-color: #2c3e50;
+$third-color: #fff;
+*{
+  color: $third-color;
+}
+.footer{
+  background-color:$sec-color ;
+  padding: 80px 0;
+}
+.icon-style{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid $third-color;
+  margin-right: 7px;
+}
+.last{
+  background-color: #1a252f;
+}

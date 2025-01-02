@@ -1,0 +1,91 @@
+$main-color: #1abc9c;
+$sec-color: #2c3e50;
+$third-color: #fff;
+
+.landing {
+  min-height: 85vh;
+  padding: 90px;
+}
+
+.title-color {
+  color: $sec-color;
+}
+
+.star-icon {
+  i {
+    color: $sec-color;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 5px;
+      background-color: $sec-color;
+      top: 45%;
+      left: -120px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 5px;
+      background-color: $sec-color;
+      top: 45%;
+      left: 40px;
+    }
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  background-clip: padding-box;
+  border-bottom: var(--bs-border-width) solid var(--bs-border-color);
+  border-top: none;
+  border-inline: none;
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+input {
+  position: relative;
+}
+
+input::placeholder {
+  color:#6a6a6a; 
+  transition: color 0.3s ease;
+}
+
+input:focus::placeholder {
+  color: transparent; 
+}
+
+label {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+input:focus  + label,
+input:not(:placeholder-shown) + label {
+  top: -20px;
+  font-size: 0.85rem;
+  color: $main-color;
+  z-index: 9999;
+}
+
+.btn-submit {
+  background-color: $main-color;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 10px;
+}

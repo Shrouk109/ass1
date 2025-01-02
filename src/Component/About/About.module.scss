@@ -1,0 +1,39 @@
+$main-color: #1abc9c;
+$sec-color: #2c3e50;
+$third-color: #fff;
+
+.landing{
+  background-color: $main-color;
+  min-height: 97vh;
+}
+
+.star-icon{
+  margin-block:10px ;
+  i{
+    color: $third-color;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 5px;
+      background-color: $third-color;
+      top: 45%;
+      left: -150px;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 5px;
+      background-color: $third-color;
+      top: 45%;
+      left: 80px;
+    }
+  }
+}
+
+
+.line-h{
+  line-height: 26px;
+}

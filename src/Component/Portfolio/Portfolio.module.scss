@@ -1,0 +1,56 @@
+$main-color: #1abc9c;
+$sec-color: #2c3e50;
+$third-color: #fff;
+
+.landing {
+  min-height: 85vh;
+  padding-top: 90px;
+}
+.title-color {
+  color: $sec-color;
+}
+
+.star-icon{
+  i{
+    color: $sec-color;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 5px;
+      background-color: $sec-color;
+      top: 45%;
+      left: -150px;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 5px;
+      background-color: $sec-color;
+      top: 45%;
+      left: 80px;
+    }
+  }
+}
+
+.inner {
+  &:hover .layer {
+    opacity: 1;
+  }
+  position: relative;
+  .layer {
+    background-color: $main-color;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.7s;
+  }
+}
