@@ -5,25 +5,25 @@ import styles from "./Navbar.module.scss";
 import "../../index.css";
 
 export default function Navbar() {
-  let location = useLocation();
+  // let location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  useEffect(() => {
-    if (location.pathname == "/about") {
-      document.title = "About";
-    } else if (location.pathname == "/portfolio") {
-      document.title = "Portfolio";
-    } else if (location.pathname == "/contact") {
-      document.title = "Contact";
-    } else if (location.pathname == "/") {
-      document.title = "Home";
-    } else {
-      document.title = "NotFound";
-    }
-  }, [location]);
+  // useEffect(() => {
+  //   if (location.pathname == "/about") {
+  //     document.title = "About";
+  //   } else if (location.pathname == "/portfolio") {
+  //     document.title = "Portfolio";
+  //   } else if (location.pathname == "/contact") {
+  //     document.title = "Contact";
+  //   } else if (location.pathname == "/") {
+  //     document.title = "Home";
+  //   } else {
+  //     document.title = "NotFound";
+  //   }
+  // }, [location]);
 
   return (
     <>

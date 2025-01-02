@@ -2,10 +2,12 @@
 import React from "react";
 import style from "./Home.module.scss";
 import img from "../../assets/avataaars.svg";
+import General from "../General/General.jsx"
 
 export default function Home() {
   return (
     <>
+      <General title={"home"} />
       <section>
         <div
           className={`${style["landing"]} d-flex justify-content-center align-items-center`}

@@ -1,10 +1,12 @@
 /*eslint-disable*/
 import React from "react";
 import style from "./About.module.scss";
+import General from "../General/General.jsx"
 
 export default function About() {
   return (
     <>
+      <General title={"about"}/>
       <section>
         <div
           className={`${style["landing"]} d-flex flex-column justify-content-center align-items-center`}

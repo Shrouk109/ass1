@@ -11,12 +11,12 @@ import Portfolio from "./Component/Portfolio/Portfolio";
 import Notfound from "./Component/Notfound/Notfound";
 
 let routers = createBrowserRouter([
-  {path:"" , element:<Layout/> , children:
+  {path:"/" , element:<Layout/> , children:
     [
       {index:true , element:<Home/>},
-      {path:"about" , element:<About/>},
-      {path:"contact", element:<Contact/>},
-      {path:"portfolio" , element:<Portfolio/>},
+      {path:"/about" , element:<About/>},
+      {path:"/contact", element:<Contact/>},
+      {path:"/portfolio" , element:<Portfolio/>},
       {path:"*" , element:<Notfound/>},
     ]
   }]

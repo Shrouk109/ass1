@@ -1,5 +1,7 @@
 import { useState } from "react";
 import style from "./Contact.module.scss";
+import General from "../General/General.jsx"
+
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -9,6 +11,7 @@ export default function Contact() {
 
   return (
     <>
+    <General title={"contact"}/>
       <section className={`${style["landing"]}`}>
         <div className="title my-4 text-center">
           <h1 className={`text-uppercase fw-bold ${style["title-color"]}`}>
@@ -51,10 +54,7 @@ export default function Contact() {
                   id="name"
                   placeholder="userName"
                 />
-                <label
-                  htmlFor="name"
-                  className="form-label ps-2"
-                >
+                <label htmlFor="name" className="form-label ps-2">
                   userName:
                 </label>
               </div>
@@ -69,10 +69,7 @@ export default function Contact() {
                   id="age"
                   placeholder="userAge"
                 />
-                <label
-                  htmlFor="age"
-                  className="form-label ps-2"
-                >
+                <label htmlFor="age" className="form-label ps-2">
                   userAge:
                 </label>
               </div>
@@ -87,10 +84,7 @@ export default function Contact() {
                   id="pass"
                   placeholder="userPassword"
                 />
-                <label
-                  htmlFor="pass"
-                  className="form-label ps-2"
-                >
+                <label htmlFor="pass" className="form-label ps-2">
                   userPassword:
                 </label>
               </div>

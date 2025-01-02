@@ -4,17 +4,19 @@ import style from "./Portfolio.module.scss";
 import port1 from "../../assets/port1.png";
 import port2 from "../../assets/port2.png";
 import port3 from "../../assets/port3.png";
+import General from "../General/General.jsx";
 
 export default function Portfolio() {
   return (
     <>
+      <General title={"portfolio"} />
       <section className={`${style["landing"]}`}>
         <div className="title mt-5 mb-3 text-center">
           <h1 className={`text-uppercase  fw-bold ${style["title-color"]}`}>
             portfolio component
           </h1>
           <div className={`${style["star-icon"]} text-center`}>
-          <i class="fa-solid fa-star my-2 fa-xl">&#9733;</i>
+            <i class="fa-solid fa-star my-2 fa-xl">&#9733;</i>
           </div>
         </div>
 
