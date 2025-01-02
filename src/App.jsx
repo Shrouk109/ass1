@@ -2,7 +2,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { HashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Component/Layout/Layout";
 import Home from "./Component/Home/Home";
 import About from "./Component/About/About";
@@ -10,7 +10,7 @@ import Contact from "./Component/Contact/Contact";
 import Portfolio from "./Component/Portfolio/Portfolio";
 import Notfound from "./Component/Notfound/Notfound";
 
-let routers = HashRouter([
+let routers = createBrowserRouter([
   {path:"" , element:<Layout/> , children:
     [
       {index:true , element:<Home/>},
